@@ -1,0 +1,16 @@
+<h1>
+    kisisel bilgiler
+    <%= @user.id%>
+</h1>
+<h1>
+    kisisel isim
+    <%= @user.name%>
+</h1>
+<h1>
+    kisisel email
+    <%= @user[:email]%>
+</h1>
+
+<hr />
+
+<%= render partial: "partials/table" , locals: {title:"Cedvel kismi"} %> 

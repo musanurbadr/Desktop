@@ -1,0 +1,24 @@
+<% if @divisions.length > 0%>
+<h1>
+    <% title%>
+</h1>
+<table calss= "table is-bordered">
+    <thead>
+        <th>bilgi kismi</th>  
+        <th>Ad kismi</th>
+    </thead>
+
+    <tbody>
+        <% @divisions.each do |division|%>
+            <tr>
+                <td><%=division.id%></td>
+                <td><%=division.name%></td>
+            </tr>
+        <%end%>
+    </tbody>
+</table>
+<%else%>
+    <h1>
+        bilgiler yok 
+    </h1>
+<%end%>
